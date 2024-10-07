@@ -26,7 +26,7 @@ st.pyplot(plt)
 
 #Manalang 2
 
-data = df['TypeName'].value_counts()
+data = df['laptop_price.csv'].value_counts()
 
 custom_order = ['Notebook', 'Gaming', 'Ultrabook', 'Netbook', '2 in 1 Convertible', 'Workstation']
 
@@ -45,6 +45,7 @@ plt.axis('equal')
 plt.show()
 
 #Sunico 1
+df = pd.read_csv('laptop_price.csv')
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.scatter(df['Inches'], df['Price (Euro)'], color='blue', alpha=0.6, edgecolor='white',s=65)
 ax.set_xlabel('Inches')
@@ -55,7 +56,7 @@ ax.set_aspect(aspect='auto')
 plt.show()
 
 #Sunico 2
-df = pd.read_csv('/laptop_price.csv')
+df = pd.read_csv('laptop_price.csv')
 company_counts = df['GPU_Company'].value_counts()
 
 labels = company_counts.index
