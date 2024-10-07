@@ -26,7 +26,7 @@ st.pyplot(plt)
 
 #Manalang 2
 
-data = df['laptop_price.csv'].value_counts()
+df = pd.read_csv('laptop_price.csv')
 
 custom_order = ['Notebook', 'Gaming', 'Ultrabook', 'Netbook', '2 in 1 Convertible', 'Workstation']
 
